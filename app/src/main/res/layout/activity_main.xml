@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#BFE4E4">
+    <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="100dp"
+            android:elevation="120dp"
+            app:cardCornerRadius="80sp"
+            app:cardBackgroundColor="#6FD1C8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:layout_gravity="center"
+                android:textSize="50dp"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="italic"/>
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/username"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:elevation="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="20sp">
+        <View
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="5dp"
+            android:text="Username"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="   Enter your name...."
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="20sp">
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Password"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-black">
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:backgroundTint="@color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:hint="Enter your password...."
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="260dp"
+        android:backgroundTint="#70C8C0"
+        android:text="login">
+
+    </Button>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Sign Up Using">
+    </TextView>
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_marginTop="2dp"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="160dp"
+        android:src="@drawable/twitter">
+    </ImageButton>
+</LinearLayout>
+
+
+
+
+
+
+
